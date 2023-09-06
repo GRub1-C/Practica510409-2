@@ -1,9 +1,108 @@
-h1{
-    border:10px dotted violet;
-    border-radius: 50px;
-    background-color: lightpink;
-    text-align: center;
-    box-shadow: 5px 5px lightgray;
-    font-size: 30px;
+/* SELECTOR TIPO */
+    /* h1{
+        border:10px dotted violet;
+        border-radius: 50px;
+        background-color: lightpink;
+        text-align: center;
+        box-shadow: 5px 5px lightgray;
+        font-size: 30px;
 
+    } */
+
+/* SELECTOR UNIVERSAL. Peermite que todos los elementos tengan la forma establecida. */
+    /* *{
+        border: 1px dashed blue
+    } */
+
+/* SELECTOR POR ID */
+/* #link1 {
+    font-size:20px
+}
+
+#link6 {
+    background-color: lightpink;
+} */
+
+/* SELECTOR POR CLASE */
+
+/* .violeta {
+    background-color: rgb(216, 144, 238);
+    border: 5px groove purple;
+    border-radius: 5px;
+}
+
+.azul {
+    background-color:lightblue ;
+    border: 5px inset  blue;
+    border-radius: 5px;
+} */
+
+/* permite que solo sea para dicho elemento */
+/* h1.verde {
+    font-size: 25px;
+} */
+
+/* Buscar por atributo sin importar valor */
+
+/* [href] {
+    border-bottom: 2px solid yellow;
+} */
+
+/* [lang] {
+    color:darkslategrey;
+} */
+
+/* [href="#"] {
+    background-color:coral;
+}
+
+/* edita todo aquello en donde exista la palabra, sin importar la posicion.  */
+/* [href*="you"] {
+    background-color: cornflowerblue;
+}
+
+[href$="mx"] {
+    background-color:palegreen;
+}
+
+[href ^="https"]{
+    font-size: 15px;
+} */ 
+
+/* cualquier etiqueta asignados con dicho tipo.*/
+/* [type="text"]{
+    color: yellowgreen;
+} */
+
+
+/* MINI PAGE */
+#mp1 {
+    border-top: 3px solid lightpink;
+    border-bottom: 3px solid lightpink;
+}
+/*  Es una mejor opcion. */
+#mp1 main {
+    background-color: lightgreen;
+}
+
+#mp1 aside {
+    background-color: lightblue;
+}
+/* Aqui se le dice que anda buscando footer pero tiene que ser un hijo directo */
+#mp1 > footer {
+    background-color: lightcoral;
+}
+
+#mp1 article > footer {
+    border: 5px double darkgreen;
+}
+/* HERMANOS GENERAL */
+#mp1 h2 ~ article {
+    box-shadow: 5px 5px 5px darkgray;
+}
+
+/* HERMANO ADYACWENTE. Por ser el primero sera diferente al resto */
+
+#mp1 h2 + article, #mp1 nav, [href="#"] {
+    border-top: 5px double olivedrab;
 }
